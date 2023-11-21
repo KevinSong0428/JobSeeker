@@ -15,8 +15,7 @@ class GetJobs(APIView):
         region = request.query_params.get("country", "us")
         location = request.query_params.get("location", "New York")
         page = request.query_params.get("page", '1')
-        what = request.query_params.get("what", '')
-        url = f"https://api.adzuna.com/v1/api/jobs/{region}/search/{page}?app_id=1ad80c2e&app_key=5bf2dd29a2b0e552e157cddca9d7e2cb&what=software engineer&where={location}"
+        url = f"https://api.adzuna.com/v1/api/jobs/{region}/search/{page}?app_id=1ad80c2e&app_key=5bf2dd29a2b0e552e157cddca9d7e2cb&where={location}"
         headers = {
             "Content-Type": "application/json"
         }

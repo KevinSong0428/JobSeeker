@@ -11,6 +11,16 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 
 from pathlib import Path
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
+ADZUNA_APP_ID = os.getenv('ADZUNA_APP_ID')
+ADZUNA_APP_KEY = os.getenv('ADZUNA_APP_KEY')
+
+# SECURITY WARNING: keep the secret key used in production secret!
+SECRET_KEY = os.getenv('SECRET_KEY')
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -19,8 +29,6 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
-# SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-8k%p=^$)^g(1)m8j5m31teu3l=*&2z$4=f(w8c-oyce2d--r#i'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
