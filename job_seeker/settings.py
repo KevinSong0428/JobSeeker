@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    "adzuna.apps.AdzunaConfig",
+    "backend.apps.BackendConfig",
     "rest_framework"
 ]
 

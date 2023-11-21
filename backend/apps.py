@@ -1,6 +1,6 @@
 from django.apps import AppConfig
 
 
-class AdzunaConfig(AppConfig):
+class BackendConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'adzuna'
+    name = 'backend'
